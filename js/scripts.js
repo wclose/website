@@ -12,3 +12,12 @@ $(window).on("scroll", () => {
     $body.removeClass(scrollClass);
   }
 });
+
+function smoothScroll() {
+  preventDefault();
+  const href = $(this).attr("href");
+  $("html, body").animate({
+    scrollTop: $(href).offset().top - 71
+  }, 600);
+}
+
