@@ -13,7 +13,7 @@ $(window).on("scroll", () => {
   }
 });
 
-$("a[class='nav-link'][href^='#']").click(function(e) {
+$("a[href^='#']").filter("[class='nav-link'],[class='navbar-brand']").click(function(e) {
   e.preventDefault();
   const href = $(this).attr("href");
   $("html, body").animate({
