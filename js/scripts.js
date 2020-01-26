@@ -13,7 +13,7 @@ $(window).on("scroll", () => {
   }
 });
 
-$("a[class='nav-link'][href^='#']").on("click", function(e) {
+$("a[class='nav-link'][href^='#']").click(function(e) {
   e.preventDefault();
   const href = $(this).attr("href");
   $("html, body").animate({
