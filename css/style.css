@@ -85,3 +85,13 @@ a:hover {
 .hero .container-fluid {
   z-index: 10;
 }
+
+body {
+background:#000000;
+}
+
+#about-me {
+  background: #24242a;
+  padding: 60px 0;
+  text-align: center;
+  }
